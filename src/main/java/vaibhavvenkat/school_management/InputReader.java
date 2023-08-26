@@ -6,7 +6,11 @@ public class InputReader {
     public String getInput(String prompt) {
         Scanner scnr = new Scanner(System.in);
         System.out.print(prompt);
-        return scnr.nextLine();
+        String in = scnr.nextLine();
+        if (in.equals("EXIT")) {
+            System.exit(0);
+        }
+        return in;
     }
     public Integer getIntInput(String prompt) {
         Scanner scnr = new Scanner(System.in);
@@ -14,6 +18,9 @@ public class InputReader {
         try {
             return scnr.nextInt();
         } catch (Exception e) {
+            if (scnr.nextLine().equals("EXIT")) {
+                System.exit(0);
+            }
             return null;
         }
     }

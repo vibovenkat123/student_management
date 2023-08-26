@@ -17,7 +17,7 @@ public class Student {
         this.name = name;
         this.grade = grade;
         this.lunch_money = 0;
-        this.avg_grade = null;
+        this.avg_grade = 100;
         this.id = (int) (Math.random() * 90000) + 10000;
     }
 }

@@ -14,6 +14,7 @@ public class Main {
                     4 (Change a student's grade)
                     5 (Change a student's lunch money)
                     6 (Get a student by their id)
+                    EXIT (Exit the program)
                     >\s"""
             );
             System.out.println();
